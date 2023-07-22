@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
 :root {
     --color-primary-light-cyan: hsl(193, 38%, 86%);
     --color-primary-neon-green: hsl(150, 100%, 66%);
     --color-neutral-grayish-blue: hsl(217, 19%, 38%);
     --color-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
     --color-neutral-dark-blue: hsl(218, 23%, 16%);
-    --font-size-qoute: 1.75rem;
+    --font-size-qoute: 2rem;
 }
 
 .attribution { padding: 1.5rem; font-size: 11px; text-align: center; }
@@ -14,14 +16,17 @@ body {
     background-color: var(--color-neutral-dark-blue);
     display: grid;
     height: 100vh;
+    font-family: 'Big Shoulders Display', cursive;
     place-content: center;
     text-align: center;
+    font-size: var(--font-size-qoute);
     color: var(--color-primary-light-cyan);
 }
 
 .advice_section__container {
     background-color: var(--color-neutral-dark-grayish-blue);
     border-radius: .5rem;
+    max-width: 375px;
 }
 
 .advice_section__advice_id {

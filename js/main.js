@@ -16,6 +16,6 @@ function sendRequest() {
     .then((data) => data.slip)
     .then((data) => {
         qoute_text_id_area.textContent = data.id;
-        qoute_text_area.textContent = data.advice;
+        qoute_text_area.textContent = `"${data.advice}"`;
     })
 }
