@@ -10,7 +10,7 @@ const qoute = document.getElementById("advice_sectionadvice_text");
 qoute.textContent = adviceClient.getQoute();
 
 const advice_section__dice_btn = document.getElementById("advice_section__dice_btn");
-advice_section__dice_btn.addEventListener(function() {
+advice_section__dice_btn.addEventListener("click", function() {
     setTimeout(() => {
         qouteId.textContent = "Loading";
         qoute.textContent = "Loading...";

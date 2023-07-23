@@ -15,6 +15,9 @@ class AdviceClient {
         .then((data) => {
             this.qouteId = data.id;
             this.qoute = data.advice;
+        })
+        .catch((error) => {
+            console.log(`${error}`)
         });
     }
 
