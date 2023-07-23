@@ -15,8 +15,7 @@ class AdviceClient {
         .then((data) => {
             this.qouteId = data.id;
             this.qoute = data.advice;
-            console.log(this.qoute)
-        })
+        });
     }
 
     getQouteId() {
