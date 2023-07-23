@@ -3,10 +3,10 @@ import AdviceClient from "./AdviceClient.js";
 const adviceClient = new AdviceClient("https://api.adviceslip.com/advice");
 window.onload = adviceClient.sendRequest();
 
-const qouteId = document.getElementById("advice_sectionadvice_id");
-qouteId.textContent = adviceClient.getQouteId(); 
+const qouteId = document.getElementById("advice_section__advice_id");
+qouteId.textContent = adviceClient.getQouteId();
 
-const qoute = document.getElementById("advice_sectionadvice_text");
+const qoute = document.getElementById("advice_section__advice_text");
 qoute.textContent = adviceClient.getQoute();
 
 const advice_section__dice_btn = document.getElementById("advice_section__dice_btn");
