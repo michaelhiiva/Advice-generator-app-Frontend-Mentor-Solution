@@ -19,7 +19,6 @@ body {
     font-family: 'Big Shoulders Display', cursive;
     place-content: center;
     text-align: center;
-    font-size: var(--font-size-qoute);
     color: var(--color-primary-light-cyan);
 }
 
@@ -36,6 +35,8 @@ body {
 
 .advice_section__advice_text {
     padding: .5rem;
+    font-size: var(--font-size-qoute);
+    text-align: center;
 }
 
 .advice_section__divider_img {
