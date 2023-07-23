@@ -18,6 +18,14 @@ class AdviceClient {
             console.log(this.qoute)
         })
     }
+
+    getQouteId() {
+        return this.qouteId;
+    }
+
+    getQoute() {
+        return this.qoute;
+    }
 }
 
 export default AdviceClient;
