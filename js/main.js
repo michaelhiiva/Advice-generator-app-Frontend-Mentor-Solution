@@ -1,21 +1,10 @@
-const request_url = "https://api.adviceslip.com/advice";
+import AdviceClient from "./AdviceClient.js";
 
-window.onload = sendRequest(request_url)
+const adviceClient = new AdviceClient("https://api.adviceslip.com/advice");
+window.onload = adviceClient.sendRequest();
 
-const advice_section__dice_btn = document.getElementById("advice_section__dice_btn");
-const qoute_text_id_area = document.getElementById("advice_section__advice_id");
-const qoute_text_area = document.getElementById("advice_section__advice_text");
+const qouteId = document.getElementById("advice_sectionadvice_id");
+qouteId.textContent = adviceClient.qouteId;
 
-advice_section__dice_btn.addEventListener("click", function() {
-    sendRequest();
-});
-
-function sendRequest() {
-    fetch("https://api.adviceslip.com/advice")
-    .then((response) => response.json())
-    .then((data) => data.slip)
-    .then((data) => {
-        qoute_text_id_area.textContent = data.id;
-        qoute_text_area.textContent = `"${data.advice}"`;
-    })
-}
+const qoute = document.getElementById("advice_sectionadvice_text");
+qoute.textContent = adviceClient.qoute;
